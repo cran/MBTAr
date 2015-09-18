@@ -1,4 +1,4 @@
-22f0fdd90613d17ffdb4e1fb12832fe2 *DESCRIPTION
+a6ca54b8234614f6bb71f24fa61fd185 *DESCRIPTION
 df390c53434517b304ac5db487184641 *NAMESPACE
 f035d5f7f38eb715b42f233a6a4eaf39 *R/Talertbyid.R
 151fe6439ee843ba542e91e81bdd39f9 *R/Talertheaders.R
@@ -30,7 +30,7 @@ a7873c93020cf6be319f7a35a62fd9a4 *man/Talertsbyroute.Rd
 52a77c871f7a83c7f0414cde18eed089 *man/Tpredictionsbyroute.Rd
 4893d86adc4cd55f2c27199028a824b3 *man/Tpredictionsbystop.Rd
 d77f3a4f5c9f96014a93f36653024839 *man/Tpredictionsbytrip.Rd
-f1dfb80d36dfdb981055335245e6b119 *man/Troutes.Rd
+15e80e2153ab491d28817cea3c190119 *man/Troutes.Rd
 9721440e5ad4eba309c77751ff88d80e *man/Troutesbystop.Rd
 0ed6e278398589c3adf2202ab4ce24f1 *man/Tschedulebyroute.Rd
 09ec830bb865226205f9e469031264ad *man/Tschedulebystop.Rd
