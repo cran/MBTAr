@@ -19,7 +19,7 @@ GTFS-compatible identifier for the route. Example: "CR-Providence"}
 \examples{
   ## Authenticate:
   \dontshow{
-  test_key <- "Zt0g4Tkp2kaLNxoKFXI_Kg"
+  test_key <- "hUOvci6zZkihtonl1_yDkg"
   }
   mykey <- NULL
   mykey <- assign("mykey", value = test_key, envir = .GlobalEnv)

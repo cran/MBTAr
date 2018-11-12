@@ -1,18 +1,20 @@
 Troutes <- function(api_key){
   # returns list of MBTA route ids and route names
-  query <- "routes"
-  base_url <- paste("http://realtime.mbta.com/developer/api/v2/",query,"?api_key=",api_key,"&format=json",sep="")
-  full_url <- paste(base_url)
-  rawdata <- readLines(full_url, warn = F)
-  dl <- jsonlite::fromJSON(txt=rawdata,simplifyDataFrame = T,flatten=F)
-  allout <- NULL
-  for(i in 1:length(dl$mode$route)){
-    route_types <- dl$mode$route_type[i]
-    mode_names <- dl$mode$mode_name[i]
-    routes <- dl$mode$route[[i]][,c("route_id","route_name")]
-    thisout <- data.frame(route_type=route_types,mode_name=mode_names,routes)
-    allout <- rbind(allout,thisout)
-  }
-  return(allout)
+  # query <- "routes"
+  # base_url <- paste0("https://api-v3.mbta.com/",query) # api key not needed for API V3
+  # rawdata <- readLines(base_url, warn = F)
+  # dl <- jsonlite::fromJSON(txt=rawdata,simplifyDataFrame = T,flatten=F)
+  # allout <- NULL
+  # for(i in 1:length(dl$data$id)){
+  #   route_types <- dl$data$attributes$type[i]
+  #   mode_names <- dl$data$attributes$description[i]
+  #   route_id <- dl$data$id[i]
+  #   route_name <- dl$data$attributes$long_name[i]
+  #   direction_names <- c(dl$data$attributes$direction_names[[i]])
+  #   thisout <- data.frame(route_type=route_types, mode_name=mode_names, route_id, route_name, direction_0 = direction_names[1], direction_1 = direction_names[2])
+  #   allout <- rbind(allout,thisout)
+  # }
+  # return(allout)
+  .Deprecated(msg = "Routes information no longer requires API call, and its output can now be called directly via the MBTAr::routes.")
 }
 
